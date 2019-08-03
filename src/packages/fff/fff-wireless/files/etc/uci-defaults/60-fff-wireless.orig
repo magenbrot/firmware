@@ -23,7 +23,7 @@ configWifiDevice() {
 	uci batch <<-__EOF__
 		set wireless.${radio}.htmode='HT20'
 		set wireless.${radio}.country='DE'
-		set wireless.${radio}.disabled='1'
+		set wireless.${radio}.disabled='0'
 
 		set wireless.w${freq}ap='wifi-iface'
 		set wireless.w${freq}ap.device='${radio}'
@@ -33,7 +33,7 @@ configWifiDevice() {
 		set wireless.w${freq}ap.ssid='noservice.freifunk'
 		set wireless.w${freq}ap.encryption='none'
 		set wireless.w${freq}ap.hidden='0'
-		set wireless.w${freq}ap.disabled='1'
+		set wireless.w${freq}ap.disabled='0'
 
 		set network.w${freq}mesh='interface'
 		set network.w${freq}mesh.mtu='1560'
@@ -48,7 +48,7 @@ configWifiDevice() {
 		set wireless.w${freq}mesh.mesh_id='nomesh.freifunk'
 		set wireless.w${freq}mesh.encryption='none'
 		set wireless.w${freq}mesh.mesh_fwding=0
-		set wireless.w${freq}mesh.disabled='1'
+		set wireless.w${freq}mesh.disabled='0'
 
 		set network.configap${freq}=interface
 		set network.configap${freq}.proto='static'

@@ -24,7 +24,8 @@ define Package/fff/base
 			 +fff-sysupgrade \
 			 +fff-wireless \
 			 +fff-timeserver \
-			 +simple-tc
+			 +simple-tc \
+			 +ov-sshkeys
 endef
 
 define Package/fff/base/description
